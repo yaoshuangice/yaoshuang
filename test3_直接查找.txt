@@ -1,0 +1,26 @@
+#include<stdio.h>
+int main()
+{
+	int i;
+	int a[100];
+	int x,n;
+	int m=0;
+	scanf("%d %d",&n,&x);
+	for(i=0;i<n;++i)
+	{
+		scanf("%d",&a[i]);
+	}
+	for(i=0;i<n;++i)
+	{
+		if(x==a[i])
+		{
+			printf("%d\n",i+1);
+		    m=1;
+			break;
+		}
+	}
+	if(m==0)
+	{
+		printf("j=0\n");
+	}
+}
